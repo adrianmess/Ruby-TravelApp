@@ -6,4 +6,9 @@ class DestinationsController < ApplicationController
 	 def edit
   	@destination = Destination.find(params[:id])
 	end
+
+	private
+  	def destination_params
+    	params.require(:destination).permit(:name, :description)
+  	end
 end
