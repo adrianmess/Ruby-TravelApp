@@ -12,8 +12,8 @@
 
         <!-- Your code here -->
 		    <%= image_tag @destination.image %>
-        <%= @destination.name %><br>
-      	<%= @destination.description %>
+        <h2><%= @destination.name %></h2>
+      	<p><%= @destination.description %></p>
         <%= link_to "Edit", edit_destination_path(@destination) %>
       </div>
     </div>
