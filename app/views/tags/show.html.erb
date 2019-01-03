@@ -24,6 +24,7 @@
 				<%= image_tag d.image %>
 				<h2><%= d.name %></h2>
 				<p><%= d.description %></p>
+        <p><%= link_to "See more", destination_path(d) %></p>
 			</div>
 	    <% end %>
     </div>
