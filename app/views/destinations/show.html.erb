@@ -11,9 +11,10 @@
       <div class="col-xs-12">
 
         <!-- Your code here -->
-		<%= image_tag @destination.image %>
+		    <%= image_tag @destination.image %>
         <%= @destination.name %><br>
       	<%= @destination.description %>
+        <%= link_to "Edit", edit_destination_path(@destination) %>
       </div>
     </div>
   </div>
